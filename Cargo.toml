@@ -1,0 +1,9 @@
+[workspace]
+members = ["common","ebpf", "user"]
+default-members = ["user"]
+resolver = "2"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
